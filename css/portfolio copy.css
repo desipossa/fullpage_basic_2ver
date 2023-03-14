@@ -1,0 +1,94 @@
+.gnb {
+    position: fixed;
+    inset: 50% 50px auto auto;
+    transform: translate(0, -50%);
+    z-index: 999;
+}
+
+.header {
+    position: fixed;
+    inset: 50px auto auto 50px;
+    z-index: 999;
+}
+
+.toTop {
+    position: fixed;
+    inset: auto 50px 50px auto;
+    z-index: 999;
+}
+
+.mopen {
+    position: fixed;
+    inset: 50px 50px auto auto;
+    z-index: 999;
+
+    width: 30px;
+    height: 30px;
+    background: #f7f7f7;
+}
+
+.mopen::before,
+.mopen::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #333;
+}
+
+.mopen::before {
+    inset: 5px 5px auto 5px;
+}
+
+.mopen::after {
+    inset: auto 5px 5px 5px;
+}
+
+.mopen.on::before {
+    opacity: 0;
+}
+
+.mopen.on::after {
+    opacity: 0;
+}
+
+.mopen button::before,
+.mopen button::after {
+    content: "";
+    position: absolute;
+    inset: 50% 5px auto 5px;
+    height: 2px;
+    background: #333;
+}
+
+.mopen button::before {
+    transform: translate(0, -50%);
+}
+
+.mopen button::after {
+    transform: translate(0, -50%);
+}
+
+.mopen.on button::before {
+    transform: translate(0, -50%) rotate(45deg);
+}
+
+.mopen.on button::after {
+    transform: translate(0, -50%) rotate(-45deg);
+}
+
+.mopen button {
+    font-size: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.gnb li.on {
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.section.on {
+    font-size: 100px;
+    transition: 1s 0.5s;
+}
