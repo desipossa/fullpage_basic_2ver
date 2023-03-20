@@ -122,3 +122,80 @@
     left: 50%;
     margin: 0 0 0 50px;
 }
+
+.main_customer .tab_menu>li {
+    user-select: none;
+    cursor: pointer;
+}
+
+.main_customer .tab_menu>li.on {
+    color: tomato;
+}
+
+.main_customer .tab_content {}
+
+.main_customer .tab_content>li {
+    display: none;
+}
+
+.main_customer .tab_content>li.on {
+    display: block;
+}
+
+.footer {
+    padding: 30px 15px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.to_top {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+
+    background: tomato;
+    color: #fff;
+    padding: 10px;
+
+    user-select: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.family_link {
+    color: #333;
+}
+
+.right_banner {
+    position: fixed;
+    top: 200px;
+    right: -400px;
+    transition: 0.5s;
+}
+
+.right_banner.on {
+    right: 0;
+}
+
+.right_banner i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 0);
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+}
+
+.right_banner i.on {
+    transform: translate(-100%, 0) rotate(180deg);
+}
+
+.right_banner .content {
+    width: 400px;
+    height: 500px;
+    background: tomato;
+}

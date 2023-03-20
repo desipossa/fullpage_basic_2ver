@@ -47,3 +47,7 @@ button {
 .fl {
     display: flex;
 }
+
+.sc {
+    padding: 100px 0;
+}
